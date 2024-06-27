@@ -1,0 +1,7 @@
+{
+    "phpserver.phpPath": "C:/xampp/php/php.exe", // Path to your PHP installation
+    "phpserver.port": 8080, // Port number to use, can be any available port
+    "phpserver.enable": true,
+    "phpserver.openBrowser": true,
+    "phpserver.defaultDoc": "index.html" // The starting file of your project
+}

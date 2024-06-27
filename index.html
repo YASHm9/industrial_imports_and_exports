@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Industrial Import and Export</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Industrial Import and Export Management</h1>
+    </header>
+
+    <div class="content">
+        <div class="button-container">
+            <button onclick="openForm('import')">Import</button>
+            <button onclick="openForm('export')">Export</button>
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="process.php" method="post" class="form-container">
+                <h2 id="form-title">Import Form</h2>
+                <input type="hidden" id="action" name="action" value="import">
+                <label for="driver"><b>Name of Driver:</b></label><br>
+                <input type="text" placeholder="Enter Driver Name" name="driver" required><br>
+
+                <label for="vehicle"><b>Vehicle Number:</b></label><br>
+                <input type="text" placeholder="Enter Vehicle Number" name="vehicle" required><br>
+
+                <label for="material"><b>Material:</b></label><br>
+                <select name="material" required>
+                    <option value="Material1">Material1</option>
+                    <option value="Material2">Material2</option>
+                    <option value="Material3">Material3</option>
+                </select><br>
+
+                <label for="weight"><b>Weight (in tons):</b></label><br>
+                <select name="weight" required>
+                    <option value="1">1 ton</option>
+                    <option value="2">2 tons</option>
+                    <option value="3">3 tons</option>
+                </select><br>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Industrial Import and Export | Contact: info@importexport.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
